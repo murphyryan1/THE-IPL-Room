@@ -1,5 +1,4 @@
 class Contact < ApplicationRecord
-	apply_simple_captcha
 
 	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
 

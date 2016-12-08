@@ -1,15 +1,13 @@
 Rails.application.routes.draw do
-  get 'contacts/new'
-
-  get 'contacts/create'
-
-  root 'static_pages#home'
+ 
+  root 'static_pages#home'  
+  get 	 '/new',	 to: 'contacts#new'
 
   get    '/about',   to: 'static_pages#about'
 
   get 	 '/contact', to: 'static_pages#contact'
 
-
+  resources :contacts
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

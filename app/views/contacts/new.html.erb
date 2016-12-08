@@ -1,2 +1,34 @@
-<h1>Contacts#new</h1>
-<p>Find me in app/views/contacts/new.html.erb</p>
+<% provide(:title, 'Get In Touch') %>
+<div class="row">
+  <div class="col-md-6 col-md-offset--10">
+
+	<%= form_for (@contact) do |f| %>
+  	  <%= render 'shared/error_messages', object: f.object %>
+  	  <script src='https://www.google.com/recaptcha/api.js'></script>
+
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'form-control' %>
+
+      <%= f.label :email %>
+      <%= f.email_field :email, class: 'form-control' %>
+
+	  <%= f.label :phone %>
+      <%= f.text_field :phone, class: 'form-control' %>
+
+      <%= f.label :message, "Message" %>
+      <%= f.text_area :message, class: 'form-control' %>
+
+  	  <div class="g-recaptcha" data-sitekey="6LdUIQ4UAAAAAFMDcLO2t8ygeA9dfdsJAupi9Czb"></div>
+
+  	  	
+  	  	
+		<%= f.submit "Create my account", class: "btn btn-primary" %>
+
+
+	<% end %>
+  </div>
+</div>
+
+
+
+

@@ -2,14 +2,13 @@
 
 one:
   name: MyString
-  email: MyString
+  email: MyString@google.com
   phone: MyString
   message: MyText
-  nickname: MyString
+
 
 two:
   name: MyString
-  email: MyString
+  email: MyString@google.com
   phone: MyString
   message: MyText
-  nickname: MyString
