@@ -16,7 +16,7 @@ gem 'jbuilder', 				       '~> 2.5'
 gem 'bcrypt', 					       '~> 3.1.7'
 
 #Google recaptcha form verification
-gem 'dotenv-rails', :groups => [:development, :test]
+gem 'dotenv-rails', :require => 'dotenv/rails-now'
 gem "recaptcha", require: "recaptcha/rails"
 
 group :development, :test do
