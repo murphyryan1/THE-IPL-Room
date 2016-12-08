@@ -5,7 +5,7 @@ class UserMailer < ApplicationMailer
   def message_email(contact)
     @contact = contact
     @url  = 'http://TheIPLRoom.com.au'
-    mail(to: 'murphyryan1@gmail.com', subject: 'Customer Contact')
+    mail(to: 'ellaessence@yahoo.com.au', subject: 'Customer Contact')
   end
 
 end
