@@ -16,6 +16,8 @@ gem 'turbolinks', 				     '~> 5'
 gem 'jbuilder', 				       '~> 2.5'
 gem 'bcrypt', 					       '~> 3.1.7'
 
+
+
 #Get .env variables for recaptcha in dev and test
 gem 'dotenv-rails', :groups => [:development, :test]
 #Google recaptcha form verification
