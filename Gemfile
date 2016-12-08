@@ -16,12 +16,12 @@ gem 'jbuilder', 				       '~> 2.5'
 gem 'bcrypt', 					       '~> 3.1.7'
 
 #Google recaptcha form verification
+gem 'dotenv-rails', :groups => [:development, :test]
 gem "recaptcha", require: "recaptcha/rails"
 
 group :development, :test do
   gem 'sqlite3',				       '1.3.12'
   gem 'byebug', platform: :mri
-  gem 'dotenv-rails'
 end
 
 group :development do

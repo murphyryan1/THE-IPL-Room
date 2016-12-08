@@ -5,7 +5,9 @@ require 'rails/all'
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
-Dotenv.load(File.expand_path("../../.env.#{Rails.env}", __FILE__))
+Dotenv::Railtie.load
+
+HOSTNAME = ENV['HOSTNAME']
 
 module EllaEssance
   class Application < Rails::Application
