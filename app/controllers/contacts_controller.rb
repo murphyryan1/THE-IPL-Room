@@ -1,6 +1,5 @@
 class ContactsController < ApplicationController
   def new
-
   	@contact = Contact.new
   end
 
@@ -8,9 +7,6 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     if   @contact.save && verify_recaptcha(model: @contact)
       UserMailer.message_email(@contact).deliver
-      #if @contact.reply
-        #Send a copy to the Customer
-      #end
       redirect_to root_url
       flash[:info] = "Message succesfully sent"
     else
